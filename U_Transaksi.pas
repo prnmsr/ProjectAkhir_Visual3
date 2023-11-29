@@ -29,7 +29,6 @@ type
     btn5: TButton;
     btn6: TButton;
     dbgrd1: TDBGrid;
-    cbb1: TComboBox;
     ds1: TDataSource;
     ZConnection1: TZConnection;
     ZQuery1: TZQuery;

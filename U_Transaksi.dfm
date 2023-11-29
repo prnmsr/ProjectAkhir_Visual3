@@ -1,6 +1,6 @@
 object F_transaksi: TF_transaksi
-  Left = 309
-  Top = 280
+  Left = 605
+  Top = 132
   Width = 560
   Height = 413
   Caption = 'FTransaksi'
@@ -16,51 +16,51 @@ object F_transaksi: TF_transaksi
   object lbl1: TLabel
     Left = 16
     Top = 16
-    Width = 36
+    Width = 67
     Height = 16
-    Caption = 'IDKost'
+    Caption = 'IDTransaksi'
   end
   object lbl2: TLabel
     Left = 16
     Top = 48
-    Width = 57
+    Width = 36
     Height = 16
-    Caption = 'NamaKost'
+    Caption = 'IDKost'
   end
   object lbl3: TLabel
     Left = 16
     Top = 80
-    Width = 40
+    Width = 63
     Height = 16
-    Caption = 'Alamat'
+    Caption = 'IDPenyewa'
   end
   object lbl4: TLabel
     Left = 16
     Top = 112
-    Width = 52
+    Width = 55
     Height = 16
-    Caption = 'JenisKost'
+    Caption = 'Tgl_Mulai'
   end
   object lbl5: TLabel
     Left = 288
     Top = 32
-    Width = 79
+    Width = 75
     Height = 16
-    Caption = 'HargaBulanan'
+    Caption = 'Status_Bayar'
   end
   object lbl6: TLabel
     Left = 288
     Top = 64
-    Width = 46
+    Width = 70
     Height = 16
-    Caption = 'Fasilitas'
+    Caption = 'Total_Harga'
   end
   object lbl7: TLabel
     Left = 288
     Top = 96
-    Width = 51
+    Width = 36
     Height = 16
-    Caption = 'Deskripsi'
+    Caption = 'Denda'
   end
   object edt1: TEdit
     Left = 112
@@ -153,8 +153,8 @@ object F_transaksi: TF_transaksi
     TabOrder = 11
   end
   object dbgrd1: TDBGrid
-    Left = 16
-    Top = 240
+    Left = 8
+    Top = 232
     Width = 513
     Height = 129
     TabOrder = 12
@@ -163,14 +163,6 @@ object F_transaksi: TF_transaksi
     TitleFont.Height = -13
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
-  end
-  object cbb1: TComboBox
-    Left = 112
-    Top = 112
-    Width = 121
-    Height = 24
-    ItemHeight = 16
-    TabOrder = 13
   end
   object ds1: TDataSource
     Left = 168

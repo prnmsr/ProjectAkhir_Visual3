@@ -1,6 +1,6 @@
 object F_Kost: TF_Kost
-  Left = 300
-  Top = 151
+  Left = 210
+  Top = 133
   Width = 567
   Height = 407
   Caption = 'FKost'
@@ -185,7 +185,7 @@ object F_Kost: TF_Kost
     Database = 'kost_kostan'
     User = 'root'
     Protocol = 'mysql'
-    Left = 64
+    Left = 56
     Top = 192
   end
   object ZQuery1: TZQuery
