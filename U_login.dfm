@@ -4,7 +4,7 @@ object F_login: TF_login
   Width = 361
   Height = 311
   AutoSize = True
-  Caption = 'FLogin'
+  Caption = 'Form Login'
   Color = clBtnFace
   Font.Charset = ANSI_CHARSET
   Font.Color = clWindowText

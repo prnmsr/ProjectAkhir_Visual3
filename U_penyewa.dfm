@@ -1,86 +1,86 @@
 object F_penyewa: TF_penyewa
-  Left = 264
-  Top = 229
-  Width = 604
-  Height = 442
-  Caption = 'FPenyewa'
+  Left = 431
+  Top = 143
+  Width = 561
+  Height = 449
+  Caption = 'Form Penyewa'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
-  Font.Height = -11
+  Font.Height = -13
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
   PixelsPerInch = 96
-  TextHeight = 13
+  TextHeight = 16
   object lbl1: TLabel
     Left = 16
     Top = 16
-    Width = 55
-    Height = 13
+    Width = 63
+    Height = 16
     Caption = 'IDPenyewa'
   end
   object lbl2: TLabel
     Left = 16
     Top = 48
-    Width = 27
-    Height = 13
+    Width = 33
+    Height = 16
     Caption = 'Nama'
   end
   object lbl3: TLabel
     Left = 16
     Top = 80
-    Width = 17
-    Height = 13
+    Width = 19
+    Height = 16
     Caption = 'NIK'
   end
   object lbl4: TLabel
     Left = 16
     Top = 112
-    Width = 17
-    Height = 13
+    Width = 22
+    Height = 16
     Caption = 'TTL'
   end
   object lbl5: TLabel
     Left = 16
     Top = 144
-    Width = 11
-    Height = 13
+    Width = 12
+    Height = 16
     Caption = 'JK'
   end
   object lbl6: TLabel
     Left = 288
     Top = 16
-    Width = 33
-    Height = 13
+    Width = 40
+    Height = 16
     Caption = 'Alamat'
   end
   object lbl7: TLabel
     Left = 288
     Top = 48
-    Width = 31
-    Height = 13
+    Width = 36
+    Height = 16
     Caption = 'Status'
   end
   object lbl8: TLabel
     Left = 288
     Top = 80
-    Width = 55
-    Height = 13
+    Width = 65
+    Height = 16
     Caption = 'Nama_Ortu'
   end
   object lbl9: TLabel
     Left = 288
     Top = 112
-    Width = 48
-    Height = 13
+    Width = 57
+    Height = 16
     Caption = 'Pekerjaan'
   end
   object lbl10: TLabel
     Left = 288
     Top = 144
-    Width = 33
-    Height = 13
+    Width = 40
+    Height = 16
     Caption = 'No_Tlp'
   end
   object edt1: TEdit
@@ -127,50 +127,86 @@ object F_penyewa: TF_penyewa
   end
   object btn1: TButton
     Left = 64
-    Top = 208
+    Top = 192
     Width = 75
     Height = 25
     Caption = 'BARU'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
     TabOrder = 6
   end
   object btn2: TButton
     Left = 160
-    Top = 208
+    Top = 192
     Width = 75
     Height = 25
     Caption = 'SIMPAN'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
     TabOrder = 7
   end
   object btn3: TButton
     Left = 256
-    Top = 208
+    Top = 192
     Width = 75
     Height = 25
     Caption = 'EDIT'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
     TabOrder = 8
   end
   object btn4: TButton
     Left = 344
-    Top = 208
+    Top = 192
     Width = 75
     Height = 25
     Caption = 'HAPUS'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
     TabOrder = 9
   end
   object btn5: TButton
     Left = 432
-    Top = 208
+    Top = 192
     Width = 75
     Height = 25
     Caption = 'BATAL'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
     TabOrder = 10
   end
   object btn6: TButton
     Left = 432
-    Top = 256
+    Top = 240
     Width = 75
     Height = 25
     Caption = 'LAPORAN'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
     TabOrder = 11
   end
   object dbgrd1: TDBGrid
@@ -178,12 +214,138 @@ object F_penyewa: TF_penyewa
     Top = 282
     Width = 513
     Height = 129
+    DataSource = ds1
     TabOrder = 12
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
-    TitleFont.Height = -11
+    TitleFont.Height = -13
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+    Columns = <
+      item
+        Expanded = False
+        FieldName = 'IDPenyewa'
+        Title.Alignment = taCenter
+        Title.Caption = 'ID Penyewa'
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -13
+        Title.Font.Name = 'Tahoma'
+        Title.Font.Style = [fsBold]
+        Width = 90
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Nama'
+        Title.Alignment = taCenter
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -13
+        Title.Font.Name = 'Tahoma'
+        Title.Font.Style = [fsBold]
+        Width = 150
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'NIK'
+        Title.Alignment = taCenter
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -13
+        Title.Font.Name = 'Tahoma'
+        Title.Font.Style = [fsBold]
+        Width = 140
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'TTL'
+        Title.Alignment = taCenter
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -13
+        Title.Font.Name = 'Tahoma'
+        Title.Font.Style = [fsBold]
+        Width = 150
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'JK'
+        Title.Alignment = taCenter
+        Title.Caption = 'Jenis Kelamin'
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -13
+        Title.Font.Name = 'Tahoma'
+        Title.Font.Style = [fsBold]
+        Width = 100
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Alamat'
+        Title.Alignment = taCenter
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -13
+        Title.Font.Name = 'Tahoma'
+        Title.Font.Style = [fsBold]
+        Width = 200
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Status'
+        Title.Alignment = taCenter
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -13
+        Title.Font.Name = 'Tahoma'
+        Title.Font.Style = [fsBold]
+        Width = 100
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Nama_Ortu'
+        Title.Alignment = taCenter
+        Title.Caption = 'Nama Ortu'
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -13
+        Title.Font.Name = 'Tahoma'
+        Title.Font.Style = [fsBold]
+        Width = 150
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Pekerjaan'
+        Title.Alignment = taCenter
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -13
+        Title.Font.Name = 'Tahoma'
+        Title.Font.Style = [fsBold]
+        Width = 140
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'No_Tlp'
+        Title.Alignment = taCenter
+        Title.Caption = 'No Tlp'
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -13
+        Title.Font.Name = 'Tahoma'
+        Title.Font.Style = [fsBold]
+        Width = 110
+        Visible = True
+      end>
   end
   object edt7: TEdit
     Left = 384
@@ -203,38 +365,51 @@ object F_penyewa: TF_penyewa
     Left = 112
     Top = 144
     Width = 121
-    Height = 21
-    ItemHeight = 13
+    Height = 24
+    ItemHeight = 16
     TabOrder = 15
+    Items.Strings = (
+      'Perempuan'
+      'Laki-laki')
   end
   object cbb2: TComboBox
     Left = 384
     Top = 48
     Width = 121
-    Height = 21
-    ItemHeight = 13
+    Height = 24
+    ItemHeight = 16
     TabOrder = 16
+    Items.Strings = (
+      'Menikah'
+      'Belum Menikah')
   end
   object ds1: TDataSource
-    Left = 168
-    Top = 248
+    DataSet = ZQuery1
+    Left = 232
+    Top = 232
   end
   object ZConnection1: TZConnection
     ControlsCodePage = cGET_ACP
     UTF8StringsAsWideField = False
     AutoEncodeStrings = False
+    Connected = True
     HostName = 'localhost'
-    Port = 0
+    Port = 3306
     Database = 'kost_kostan'
     User = 'root'
     Protocol = 'mysql'
-    Left = 64
-    Top = 248
+    LibraryLocation = 'D:\SEMESTER 5\Visual\ProjectAkhir\libmysql.dll'
+    Left = 128
+    Top = 232
   end
   object ZQuery1: TZQuery
+    Connection = ZConnection1
+    Active = True
+    SQL.Strings = (
+      'select * from penyewa')
     Params = <>
-    Left = 128
-    Top = 248
+    Left = 192
+    Top = 232
   end
   object frxReport1: TfrxReport
     Version = '4.12.6'
@@ -251,8 +426,8 @@ object F_penyewa: TF_penyewa
       'begin'
       ''
       'end.')
-    Left = 216
-    Top = 248
+    Left = 280
+    Top = 232
     Datasets = <>
     Variables = <>
     Style = <>
@@ -261,7 +436,7 @@ object F_penyewa: TF_penyewa
     UserName = 'frxDBDataset1'
     CloseDataSource = False
     BCDToCurrency = False
-    Left = 272
-    Top = 248
+    Left = 336
+    Top = 232
   end
 end

@@ -5,7 +5,8 @@ interface
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, frxClass, frxDBSet, DB, ZAbstractRODataset, ZAbstractDataset,
-  ZDataset, ZAbstractConnection, ZConnection, StdCtrls, Grids, DBGrids;
+  ZDataset, ZAbstractConnection, ZConnection, StdCtrls, Grids, DBGrids,
+  ComCtrls;
 
 type
   TF_transaksi = class(TForm)
@@ -34,6 +35,7 @@ type
     ZQuery1: TZQuery;
     frxReport1: TfrxReport;
     frxdbdtst1: TfrxDBDataset;
+    dtp1: TDateTimePicker;
   private
     { Private declarations }
   public

@@ -7,7 +7,7 @@ uses
   Dialogs, StdCtrls, ExtCtrls;
 
 type
-  TForm2 = class(TForm)
+  TF_registrasi = class(TForm)
     shp1: TShape;
     lbl3: TLabel;
     lbl1: TLabel;
@@ -23,7 +23,7 @@ type
   end;
 
 var
-  Form2: TForm2;
+  F_registrasi: TF_registrasi;
 
 implementation
 

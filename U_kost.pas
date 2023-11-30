@@ -9,7 +9,7 @@ uses
   ZConnection, ADODB;
 
 type
-  TF_Kost = class(TForm)
+  TF_kost = class(TForm)
     lbl1: TLabel;
     lbl2: TLabel;
     lbl3: TLabel;
@@ -43,7 +43,7 @@ type
   end;
 
 var
-  F_Kost: TF_Kost;
+  F_kost: TF_kost;
 
 implementation
 

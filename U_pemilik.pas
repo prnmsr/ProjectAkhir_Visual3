@@ -8,7 +8,7 @@ uses
   ZDataset, ZAbstractConnection, ZConnection, StdCtrls, Grids, DBGrids;
 
 type
-  TF_Pemilik = class(TForm)
+  TF_pemilik = class(TForm)
     lbl1: TLabel;
     lbl2: TLabel;
     lbl3: TLabel;
@@ -40,7 +40,7 @@ type
   end;
 
 var
-  F_Pemilik: TF_Pemilik;
+  F_pemilik: TF_pemilik;
 
 implementation
 

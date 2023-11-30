@@ -1,10 +1,10 @@
-object Form2: TForm2
+object F_registrasi: TF_registrasi
   Left = 698
   Top = 168
   Width = 361
   Height = 311
   AutoSize = True
-  Caption = 'Form2'
+  Caption = 'Form Registrasi'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -66,7 +66,7 @@ object Form2: TForm2
     Left = 88
     Top = 88
     Width = 161
-    Height = 27
+    Height = 21
     TabOrder = 0
     Text = 'edt1'
   end
@@ -74,7 +74,7 @@ object Form2: TForm2
     Left = 88
     Top = 160
     Width = 161
-    Height = 27
+    Height = 21
     TabOrder = 1
     Text = 'edt2'
   end

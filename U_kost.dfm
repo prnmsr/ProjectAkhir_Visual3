@@ -1,9 +1,9 @@
-object F_Kost: TF_Kost
-  Left = 210
-  Top = 133
+object F_kost: TF_kost
+  Left = 377
+  Top = 162
   Width = 567
   Height = 407
-  Caption = 'FKost'
+  Caption = 'Form Kost'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -110,6 +110,12 @@ object F_Kost: TF_Kost
     Width = 75
     Height = 25
     Caption = 'BARU'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
     TabOrder = 6
   end
   object btn2: TButton
@@ -118,6 +124,12 @@ object F_Kost: TF_Kost
     Width = 75
     Height = 25
     Caption = 'SIMPAN'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
     TabOrder = 7
   end
   object btn3: TButton
@@ -126,6 +138,12 @@ object F_Kost: TF_Kost
     Width = 75
     Height = 25
     Caption = 'EDIT'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
     TabOrder = 8
   end
   object btn4: TButton
@@ -134,6 +152,12 @@ object F_Kost: TF_Kost
     Width = 75
     Height = 25
     Caption = 'HAPUS'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
     TabOrder = 9
   end
   object btn5: TButton
@@ -142,6 +166,12 @@ object F_Kost: TF_Kost
     Width = 75
     Height = 25
     Caption = 'BATAL'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
     TabOrder = 10
   end
   object btn6: TButton
@@ -150,6 +180,12 @@ object F_Kost: TF_Kost
     Width = 75
     Height = 25
     Caption = 'LAPORAN'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
     TabOrder = 11
   end
   object dbgrd1: TDBGrid
@@ -157,12 +193,137 @@ object F_Kost: TF_Kost
     Top = 240
     Width = 513
     Height = 129
+    DataSource = ds1
     TabOrder = 12
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
     TitleFont.Height = -13
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+    Columns = <
+      item
+        Expanded = False
+        FieldName = 'IDKost'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        Title.Alignment = taCenter
+        Title.Caption = 'ID Kost'
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -13
+        Title.Font.Name = 'Tahoma'
+        Title.Font.Style = [fsBold]
+        Width = 60
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'NamaKost'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        Title.Alignment = taCenter
+        Title.Caption = 'Nama Kost'
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -13
+        Title.Font.Name = 'Tahoma'
+        Title.Font.Style = [fsBold]
+        Width = 150
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Alamat'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        Title.Alignment = taCenter
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -13
+        Title.Font.Name = 'Tahoma'
+        Title.Font.Style = [fsBold]
+        Width = 250
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'JenisKost'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        Title.Alignment = taCenter
+        Title.Caption = 'Jenis Kost'
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -13
+        Title.Font.Name = 'Tahoma'
+        Title.Font.Style = [fsBold]
+        Width = 130
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'HargaBulanan'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        Title.Alignment = taCenter
+        Title.Caption = 'Harga Bulanan'
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -13
+        Title.Font.Name = 'Tahoma'
+        Title.Font.Style = [fsBold]
+        Width = 150
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Fasilitas'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        Title.Alignment = taCenter
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -13
+        Title.Font.Name = 'Tahoma'
+        Title.Font.Style = [fsBold]
+        Width = 200
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Deskripsi'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        Title.Alignment = taCenter
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -13
+        Title.Font.Name = 'Tahoma'
+        Title.Font.Style = [fsBold]
+        Width = 250
+        Visible = True
+      end>
   end
   object cbb1: TComboBox
     Left = 112
@@ -171,8 +332,13 @@ object F_Kost: TF_Kost
     Height = 24
     ItemHeight = 16
     TabOrder = 13
+    Items.Strings = (
+      'Perempuan'
+      'Laki-laki'
+      'Campuran')
   end
   object ds1: TDataSource
+    DataSet = ZQuery1
     Left = 168
     Top = 192
   end
@@ -180,17 +346,23 @@ object F_Kost: TF_Kost
     ControlsCodePage = cGET_ACP
     UTF8StringsAsWideField = False
     AutoEncodeStrings = False
+    Connected = True
     HostName = 'localhost'
-    Port = 0
+    Port = 3306
     Database = 'kost_kostan'
     User = 'root'
     Protocol = 'mysql'
+    LibraryLocation = 'D:\SEMESTER 5\Visual\ProjectAkhir\libmysql.dll'
     Left = 56
     Top = 192
   end
   object ZQuery1: TZQuery
+    Connection = ZConnection1
+    Active = True
+    SQL.Strings = (
+      'select * from kost')
     Params = <>
-    Left = 128
+    Left = 120
     Top = 192
   end
   object frxReport1: TfrxReport
@@ -218,7 +390,7 @@ object F_Kost: TF_Kost
     UserName = 'frxDBDataset1'
     CloseDataSource = False
     BCDToCurrency = False
-    Left = 272
+    Left = 280
     Top = 192
   end
 end

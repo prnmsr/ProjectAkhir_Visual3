@@ -1,9 +1,9 @@
 object F_transaksi: TF_transaksi
   Left = 605
   Top = 132
-  Width = 560
+  Width = 547
   Height = 413
-  Caption = 'FTransaksi'
+  Caption = 'Form Transaksi'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -110,6 +110,12 @@ object F_transaksi: TF_transaksi
     Width = 75
     Height = 25
     Caption = 'BARU'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
     TabOrder = 6
   end
   object btn2: TButton
@@ -118,6 +124,12 @@ object F_transaksi: TF_transaksi
     Width = 75
     Height = 25
     Caption = 'SIMPAN'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
     TabOrder = 7
   end
   object btn3: TButton
@@ -126,6 +138,12 @@ object F_transaksi: TF_transaksi
     Width = 75
     Height = 25
     Caption = 'EDIT'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
     TabOrder = 8
   end
   object btn4: TButton
@@ -134,6 +152,12 @@ object F_transaksi: TF_transaksi
     Width = 75
     Height = 25
     Caption = 'HAPUS'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
     TabOrder = 9
   end
   object btn5: TButton
@@ -142,6 +166,12 @@ object F_transaksi: TF_transaksi
     Width = 75
     Height = 25
     Caption = 'BATAL'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
     TabOrder = 10
   end
   object btn6: TButton
@@ -150,39 +180,153 @@ object F_transaksi: TF_transaksi
     Width = 75
     Height = 25
     Caption = 'LAPORAN'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
     TabOrder = 11
   end
   object dbgrd1: TDBGrid
     Left = 8
-    Top = 232
+    Top = 240
     Width = 513
     Height = 129
+    DataSource = ds1
     TabOrder = 12
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
     TitleFont.Height = -13
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+    Columns = <
+      item
+        Expanded = False
+        FieldName = 'IDTransaksi'
+        Title.Alignment = taCenter
+        Title.Caption = 'ID Transaksi'
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -13
+        Title.Font.Name = 'Tahoma'
+        Title.Font.Style = [fsBold]
+        Width = 90
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'IDKost'
+        Title.Alignment = taCenter
+        Title.Caption = 'ID Kost'
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -13
+        Title.Font.Name = 'Tahoma'
+        Title.Font.Style = [fsBold]
+        Width = 80
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'IDPenyewa'
+        Title.Alignment = taCenter
+        Title.Caption = 'ID Penyewa'
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -13
+        Title.Font.Name = 'Tahoma'
+        Title.Font.Style = [fsBold]
+        Width = 90
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Tgl_Mulai'
+        Title.Alignment = taCenter
+        Title.Caption = 'Tanggal Mulai'
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -13
+        Title.Font.Name = 'Tahoma'
+        Title.Font.Style = [fsBold]
+        Width = 120
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Status_Bayar'
+        Title.Alignment = taCenter
+        Title.Caption = 'Status Bayar'
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -13
+        Title.Font.Name = 'Tahoma'
+        Title.Font.Style = [fsBold]
+        Width = 130
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Total_Harga'
+        Title.Alignment = taCenter
+        Title.Caption = 'Total Harga'
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -13
+        Title.Font.Name = 'Tahoma'
+        Title.Font.Style = [fsBold]
+        Width = 130
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Denda'
+        Title.Alignment = taCenter
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -13
+        Title.Font.Name = 'Tahoma'
+        Title.Font.Style = [fsBold]
+        Width = 130
+        Visible = True
+      end>
+  end
+  object dtp1: TDateTimePicker
+    Left = 112
+    Top = 112
+    Width = 121
+    Height = 24
+    Date = 45260.867491574080000000
+    Time = 45260.867491574080000000
+    TabOrder = 13
   end
   object ds1: TDataSource
-    Left = 168
+    DataSet = ZQuery1
+    Left = 208
     Top = 192
   end
   object ZConnection1: TZConnection
     ControlsCodePage = cGET_ACP
     UTF8StringsAsWideField = False
     AutoEncodeStrings = False
+    Connected = True
     HostName = 'localhost'
-    Port = 0
+    Port = 3306
     Database = 'kost_kostan'
     User = 'root'
     Protocol = 'mysql'
-    Left = 64
+    LibraryLocation = 'D:\SEMESTER 5\Visual\ProjectAkhir\libmysql.dll'
+    Left = 104
     Top = 192
   end
   object ZQuery1: TZQuery
+    Connection = ZConnection1
+    Active = True
+    SQL.Strings = (
+      'select * from transaksi')
     Params = <>
-    Left = 128
+    Left = 168
     Top = 192
   end
   object frxReport1: TfrxReport
@@ -200,7 +344,7 @@ object F_transaksi: TF_transaksi
       'begin'
       ''
       'end.')
-    Left = 216
+    Left = 256
     Top = 192
     Datasets = <>
     Variables = <>
@@ -210,7 +354,7 @@ object F_transaksi: TF_transaksi
     UserName = 'frxDBDataset1'
     CloseDataSource = False
     BCDToCurrency = False
-    Left = 272
+    Left = 312
     Top = 192
   end
 end
